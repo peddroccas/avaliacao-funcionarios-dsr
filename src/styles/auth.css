@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap');
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    margin: 0 25%;
+    background-color: antiquewhite;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+}
+
+h1 {
+    font-family: 'Agdasima', sans-serif;
+    font-size: 55px;
+}
+.botaoLogin {
+    width: 250px;
+    background-color: #E4252F;
+    border-radius: 16px;
+    border-color: white;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: justify;
+    flex-direction: row;
+    font-family: 'Agdasima', sans-serif;
+    font-size: 25px;
+    align-items: center;
+}
+
+.googleLogo {
+    padding: 0% 10%;
+}
