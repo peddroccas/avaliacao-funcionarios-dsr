@@ -1,4 +1,3 @@
-import frenteFarmaciaImg from '../assets/frenteFarmacia.jpeg'
 import logoImg from '../assets/Logo.png'
 import googleIconImg from "../assets/google-icon.svg"
 import '../styles/auth.css'
