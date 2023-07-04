@@ -1,12 +1,15 @@
-import { Button } from "./components/Button";
-import { Home } from "./pages/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+
+import { Login } from "./pages/Login";
+
 
 function App() {
   return (
-    //<h1>Hello World</h1>
-    <div>
-      <Home/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" Component={Login} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

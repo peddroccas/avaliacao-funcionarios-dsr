@@ -2,7 +2,7 @@ import logoImg from '../assets/Logo.png'
 import googleIconImg from "../assets/google-icon.svg"
 import '../styles/auth.css'
 
-export function Home(){
+export function Login(){
     return (
         <div id='page-auth'>
             <main>
