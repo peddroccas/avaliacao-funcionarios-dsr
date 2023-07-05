@@ -18,6 +18,7 @@ main {
 h1 {
     font-family: 'Agdasima', sans-serif;
     font-size: 60px;
+    color: #0c4b80;
 }
 .botaoLogin {
     width: 250px;
@@ -32,6 +33,10 @@ h1 {
     font-family: 'Agdasima', sans-serif;
     font-size: 25px;
     align-items: center;
+}
+
+.botaoLogin:hover{
+    background-color: red;
 }
 
 .googleLogo {

@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 2% 2% 5%;
+
+    border-bottom: 0.1px solid #a7a7a7;
+}
+
+.botaoLogOut{
+    padding: 0% 0.8%;
+    background-color: #E4252F ;
+    color: white;
+    border-color: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    border-radius: 1vh;
+    border-style: none;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 08px;
+}
+
+.saudacao {
+    font-family: 'Agdasima', sans-serif;
+    font-size: 24px;
+}
+
+.cargo{
+    font-size: 24px;
+}
+
+.botaoLogOut:hover{
+    background-color: rgb(255, 71, 71);
+}
