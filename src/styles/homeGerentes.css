@@ -37,3 +37,13 @@ header {
 .botaoLogOut:hover{
     background-color: rgb(255, 71, 71);
 }
+
+.gerente-main {
+    display: flex;
+    padding-top: 1%;
+    flex-direction: row;
+}
+
+.barra-lateral {
+    
+}

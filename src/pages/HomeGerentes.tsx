@@ -21,8 +21,12 @@ export function HomeGerentes(){
                     Log out
                     </button>
             </header>
-            <main>
+            <main className='gerente-main'>
+                <aside className='barra-lateral'>
+                <h2></h2>
+                </aside>
                 <h2>Avaliações pendentes</h2>
+                {/* aqui entra os links para abrir as avaliações */}
             </main>
         </div>
     )
