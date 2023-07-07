@@ -1,14 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import logOutIcon from "../assets/log-out-icon.svg";
-import { useContext } from "react";
-import { AuthContext } from "../App";
 
 import "../styles/homeGerentes.css";
 import logoFarmaciaImg from "../assets/logo-farmacia.png";
+import { useAuth } from "../hooks/useAuth";
 
 export function HomeGerentes() {
   const navigate = useNavigate();
-  const { user } = useContext(AuthContext);
+  const { user } = useAuth();
 
   function LogOut() {
     navigate("/");

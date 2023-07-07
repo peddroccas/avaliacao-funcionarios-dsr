@@ -1,16 +1,14 @@
-import { auth, firebase } from '../services/firebase'
-import { useContext} from 'react'
 import { useNavigate } from 'react-router-dom'
 
-import { AuthContext } from '../App'
 import logoFarmaciaImg from '../assets/logo-farmacia.png'
 import googleIconImg from "../assets/google-icon.svg"
 import '../styles/auth.css'
+import { useAuth } from '../hooks/useAuth'
 
 
 export function Login(){
     const navigate = useNavigate();
-    const { user, signInWithGoogle} = useContext(AuthContext)
+    const { user, signInWithGoogle} = useAuth()
 
     async function navigation(){
         await signInWithGoogle()
