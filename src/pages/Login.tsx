@@ -1,21 +1,28 @@
-import { Navigate, useNavigate } from 'react-router-dom'
+import { auth, firebase } from '../services/firebase'
+import { useContext} from 'react'
+import { useNavigate } from 'react-router-dom'
+
+import { AuthContext } from '../App'
 import logoFarmaciaImg from '../assets/logo-farmacia.png'
 import googleIconImg from "../assets/google-icon.svg"
 import '../styles/auth.css'
 
+
 export function Login(){
     const navigate = useNavigate();
+    const { user, signInWithGoogle} = useContext(AuthContext)
 
-    function navigateToGerentes(){
+    async function navigation(){
+        await signInWithGoogle()
         navigate('/gerente');
     }
-    
+
     return (
         <div id='page-auth'>
             <main>
                 <h1>Avaliação de funcionários</h1>
                 <img src={logoFarmaciaImg} alt="Logo" />
-                <button onClick={navigateToGerentes} className='botaoLogin'>
+                <button onClick={navigation} className='botaoLogin'>
                     <img className='googleLogo' src={googleIconImg} alt='googleLogo'/>
                     Entre com Google
                 </button>
