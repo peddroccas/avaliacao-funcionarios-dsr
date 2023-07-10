@@ -16,22 +16,32 @@ export function HomeGerentes() {
   return (
     <div id="gerente">
       <header>
+        <img
+          src={logoFarmaciaImg}
+          alt="logo-farmacia"
+          className="logo-farmacia"
+        />
         <p className="usuario">
-          <img src={user?.avatar} alt="foto-google" className="foto-google"/>
-          {user?.name} - <strong className="cargo">GERENTE</strong>
+          <strong className="cargo">Gerente</strong>
+          {user?.name}
+          <img src={user?.avatar} alt="foto-google" className="foto-google" />
         </p>
-        <img src={logoFarmaciaImg} alt="logo-farmacia" className="logo-farmacia" />
-        <button onClick={LogOut} className="botao-log-out">
+        {/* <button onClick={LogOut} className="botao-log-out">
           <img src={logOutIcon} alt="" />
           Log out
-        </button>
+        </button> */}
       </header>
-      <main className="gerente-main">
+      <main className="gerente">
         <aside className="barra-lateral">
-          <h2></h2>
+          <h2>Opções</h2>
         </aside>
-        <h2>Avaliações pendentes</h2>
-        {/* aqui entra os links para abrir as avaliações */}
+        <div className="avaliacoes-pendentes">
+          <h1 className="titulo">Avaliações pendentes</h1>
+          <div className="avaliacoes-pendentes-link">
+            <a href="">Avaliação motoqueiros</a>
+            <a href="">Avaliação perfumistas</a>
+          </div>
+        </div>
       </main>
     </div>
   );

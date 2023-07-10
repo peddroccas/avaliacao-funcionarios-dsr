@@ -1,65 +1,117 @@
-@import url('https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+/* header */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5% 1% 0.5% 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5% 1% 0.5% 1%;
 
-    border-bottom: 0.1px solid #a7a7a7;
-}
-
-.botao-log-out{
-    padding: 0.45% 0.8%;
-    background-color: #E4252F ;
-    color: white;
-    border-color: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    border-radius: 1vh;
-    border-style: none;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
+  border-bottom: 0.1px solid #a7a7a7;
 }
 
 .usuario {
-    display: flex;
-    align-items: center;
-    font-family: 'Agdasima', sans-serif;
-    font-size: 22px;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-family: "Agdasima", sans-serif;
+  font-size: 22px;
+  gap: 10px;
 }
 
 .foto-google {
-    border-radius: 100px;
-    width: 15%;
-    height: 10%;
+  border-radius: 100px;
+  width: 15%;
+  height: 10%;
 }
 
-.logo-farmacia{
-    max-width: 200px;
-    width: auto;
+.cargo {
+  opacity: 0.75;
+  font-size: 28px;
 }
 
-.cargo{
-    opacity: 0.75; 
-    font-size: 24px;
+.logo-farmacia {
+  max-width: 200px;
+  width: auto;
 }
 
-.botao-log-out:hover{
-    background-color: rgb(255, 71, 71);
+.botao-log-out {
+  padding: 0.45% 0.8%;
+  background-color: #e4252f;
+  color: white;
+  border-color: none;
+  font-family: "Agdasima", sans-serif;
+  font-size: 16px;
+  border-radius: 1vh;
+  border-style: none;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
 }
 
-.gerente-main {
-    display: flex;
-    padding-top: 1%;
-    flex-direction: row;
+.botao-log-out:hover {
+  background-color: rgb(255, 71, 71);
+}
+
+/* main */
+.gerente {
+  display: flex;
+  align-items: start;
+  padding-top: 0%;
+  flex-direction: row;
+}
+
+.avaliacoes-pendentes {
+  display: flex;
+  flex-direction: column;
+  padding: 1% 0%;
+  align-items: start;
+  gap: 50px;
+}
+
+.titulo {
+  font-family: "Poppins", sans-serif;
+  font-size: 45px;
+}
+
+.avaliacoes-pendentes-link {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+a {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: #0c4b80;
+  color: aliceblue;
+  border-radius: 10px;
+
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding: 1%;
+
+  text-decoration: none;
+  min-width: 1250px;
+  min-height: 50px;
+}
+
+a:hover {
+  opacity: 0.9;
 }
 
 .barra-lateral {
-    
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  flex: 0.7;
+  padding: 1% 0%;
+
+  font-family: 'Poppins', sans-serif;
+  border-right: 0.1px solid #a7a7a7;
 }
