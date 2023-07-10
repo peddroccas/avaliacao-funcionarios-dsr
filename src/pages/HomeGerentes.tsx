@@ -16,11 +16,12 @@ export function HomeGerentes() {
   return (
     <div id="gerente">
       <header>
-        <p className="saudacao">
+        <p className="usuario">
+          <img src={user?.avatar} alt="foto-google" className="foto-google"/>
           {user?.name} - <strong className="cargo">GERENTE</strong>
         </p>
-        <img src={logoFarmaciaImg} alt="" />
-        <button onClick={LogOut} className="botaoLogOut">
+        <img src={logoFarmaciaImg} alt="logo-farmacia" className="logo-farmacia" />
+        <button onClick={LogOut} className="botao-log-out">
           <img src={logOutIcon} alt="" />
           Log out
         </button>

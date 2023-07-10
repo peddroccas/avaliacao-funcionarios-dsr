@@ -4,13 +4,14 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding: 2% 2% 2% 5%;
+    align-items: center;
+    padding: 0.5% 1% 0.5% 1%;
 
     border-bottom: 0.1px solid #a7a7a7;
 }
 
-.botaoLogOut{
-    padding: 0% 0.8%;
+.botao-log-out{
+    padding: 0.45% 0.8%;
     background-color: #E4252F ;
     color: white;
     border-color: none;
@@ -22,19 +23,34 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 08px;
+    gap: 8px;
 }
 
-.saudacao {
+.usuario {
+    display: flex;
+    align-items: center;
     font-family: 'Agdasima', sans-serif;
-    font-size: 24px;
+    font-size: 22px;
+    gap: 10px;
+}
+
+.foto-google {
+    border-radius: 100px;
+    width: 15%;
+    height: 10%;
+}
+
+.logo-farmacia{
+    max-width: 200px;
+    width: auto;
 }
 
 .cargo{
+    opacity: 0.75; 
     font-size: 24px;
 }
 
-.botaoLogOut:hover{
+.botao-log-out:hover{
     background-color: rgb(255, 71, 71);
 }
 
