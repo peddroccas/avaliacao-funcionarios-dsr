@@ -34,7 +34,7 @@ export function Home() {
       </header>
       <main className="funcao">
         <aside className="barra-lateral">
-          <h2>Opções</h2>
+          <h2 className="barra-lateral-titulo">Opções</h2>
           <a className="barra-lateral-link" href="">Avaliações pendentes</a>
           <a className="barra-lateral-link" href="">Administrativo</a>
           <a className="barra-lateral-link" href="">Balconistas</a>

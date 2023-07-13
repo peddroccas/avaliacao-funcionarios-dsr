@@ -108,17 +108,21 @@ a:hover {
 .barra-lateral {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: stretch;
   height: 100vh;
   flex: 0.7;
-  padding: 1% 0%;
+  padding: 1% 0.3%;
 
   color: aliceblue;
   background-color: #0c4b80;
   font-family: "Poppins", sans-serif;
   border-right: 0.1px solid #a7a7a7;
 
-  gap: 10px;
+  gap: 15px;
+}
+
+.barra-lateral-titulo{
+  text-align: center;
 }
 
 .barra-lateral-link {
@@ -128,7 +132,6 @@ a:hover {
   color: aliceblue;
   text-decoration: none;
   border-radius: 5px;
-  min-width: 387px;
 }
 
 .barra-lateral-link:hover{
